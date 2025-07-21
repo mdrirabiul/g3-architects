@@ -224,6 +224,15 @@ main > section {
     
 }
 
+/* footer section styles */
+.footer-section {
+    width: 1440px;
+    margin: 160px auto;
+    padding: 35px 0;
+    background-color: rgba(255, 244, 231, 1);
+    text-align: center;
+}
+
 /* Medium Size Device */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
