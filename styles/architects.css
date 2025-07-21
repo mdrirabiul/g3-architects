@@ -7,6 +7,10 @@
   font-style: normal;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 /* Shared Styles */
 .section-title {
@@ -96,6 +100,7 @@ main > section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    justify-items: center;
 }
 .our-features {
     margin-left: 130px;
@@ -190,7 +195,14 @@ main > section {
     filter: grayscale(100%);
 }
 
-
+/* footer section styles */
+.footer-section {
+    width: 1440px;
+    margin: 160px auto;
+    padding: 35px 0;
+    background-color: rgba(255, 244, 231, 1);
+    text-align: center;
+}
 
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
@@ -205,6 +217,16 @@ main > section {
     .sponsors-company {
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
+    }
+    .section-title, 
+    .fact-description {
+        margin-left: 20px;
+    }
+    #feature-section-title {
+        margin-left: 5px;
+    }
+    .features-description {
+        margin-left: 20px;
     }
     .facts-container {
         justify-items: center;
@@ -221,17 +243,16 @@ main > section {
         margin-top: 20px;
         margin-left: 20px;
     }
-    
+    .footer-section {
+        width: 100%;
+        margin: 0;
+    }
+    .footer-section p {
+        margin: 0 30px;
+    }
 }
 
-/* footer section styles */
-.footer-section {
-    width: 1440px;
-    margin: 160px auto;
-    padding: 35px 0;
-    background-color: rgba(255, 244, 231, 1);
-    text-align: center;
-}
+
 
 /* Medium Size Device */
 
@@ -256,5 +277,9 @@ main > section {
     #experience-badge {
         margin-top: 20px;
         margin-left: 20px;
+    }
+    .footer-section {
+        width: 100%;
+        margin: 0;
     }
 }
